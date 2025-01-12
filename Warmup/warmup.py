@@ -31,3 +31,22 @@ def counter(iter):
 counter('abcabc')
 counter(['ab', 'ab', 'ba', 'ba', 'aba', 'ab'])
 '''
+
+#our shared values(iter1, iter2)
+
+def ourSharedValues(iter1, iter2):
+    shared_dict = {}
+    for char in iter1:
+        if char in iter2: 
+            count = iter2.count(char) 
+            if char in shared_dict:
+                shared_dict[char] += count  
+            else:
+                shared_dict[char] = count  
+    print(shared_dict)
+
+
+
+ourSharedValues('abcdef', 'abba')
+ourSharedValues('babar', 'librarian')
+
