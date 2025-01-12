@@ -1,3 +1,15 @@
+# Linear Search
+
+def linear_search(needle, haystack):
+    count=0
+    for i in haystack:
+        count+=1
+        if needle == i:
+            return print(count)
+
+linear_search(8, [6,2,8,4])
+# Part 2 - Binary Search
+'''
 def binary_search(needle,haystack):
 	low = 0
 	high = len(haystack) - 1
@@ -23,3 +35,4 @@ if result != -1:
 	print("Element is present at index", result)
 else:
 	print("Element is not present in array")
+'''
