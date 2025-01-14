@@ -5,41 +5,13 @@ def linear_search(needle, haystack):
     for i in haystack:
         count+=1
         if needle == i:
-            return print(count)
+            return count
 
-linear_search(8, [6,2,8,4])
-'''
-# Part 2 - Binary Search
-'''
-def binary_search(needle,haystack):
-	low = 0
-	high = len(haystack) - 1
-	mid = 0
-
-	while low <= high:
-
-		mid = (high + low) // 2
-		if haystack[mid] < needle:
-			low = mid + 1
-		elif haystack[mid] > needle:
-			high = mid - 1
-		else:
-			return mid
-	return -1
-
-
-haystack = [ 2, 3, 4, 10, 40 ]
-needle = 10
-result = binary_search(needle,haystack)
-
-if result != -1:
-	print("Element is present at index", result)
-else:
-	print("Element is not present in array")
+print(linear_search(8, [6,2,8,4]))
 '''
 
 # Part 2 
-
+'''
 def binary_search(needle,haystack):
     high = len(haystack)-1
     mid = 0
@@ -66,3 +38,39 @@ if prob2 == 0:
     print("not present")
 else:
     print(prob2)
+'''
+
+# Part 3 
+'''
+def linear_search_multi(needle, haystack):
+    count = 0
+    answer=[]
+
+    for i in haystack:
+        if i == needle:
+            answer.append(count)
+        count +=1
+    return answer
+
+print(linear_search_multi(8, [6, 2, 8, 4, 8, 7]))
+'''
+
+def binary_search_multi(needle,haystack):
+    high = len(haystack)-1
+    mid = 0
+    low = 0
+    answer = []
+    while low <= high:
+        mid = (high + low) //2
+        if haystack[mid] > needle:
+            high = mid - 1
+        elif haystack[mid] < needle:
+            low = mid + 1
+        elif haystack[mid] == needle:
+            answer.append(mid)
+            
+            
+    return answer
+
+print(binary_search_multi(2, [1, 2, 2, 3, 3, 3, 4, 5]))
+
