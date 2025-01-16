@@ -49,4 +49,3 @@ def ourSharedValues(iter1, iter2):
 
 ourSharedValues('abcdef', 'abba')
 ourSharedValues('babar', 'librarian')
-
