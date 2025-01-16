@@ -324,10 +324,11 @@ filepath = './Week 2/time.txt'
 if os.path.exists(filepath):
     with open(filepath, 'a') as fp:
         for i in final_list:
-            fp.write(f"{i}, ")
+            fp.write(f"{i},\n")
         
 else:
     with open(filepath,'w') as fp:
         for i in final_list:
-            fp.write(f"{i}, ")
+            fp.write(f"{i}, \n")
+        
         
