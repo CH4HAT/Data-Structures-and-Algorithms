@@ -14,7 +14,7 @@ def one():
         results.append(duration)
     nanoseconds = statistics.mean(results)
     print(nanoseconds/1000)
-    return nanoseconds
+    return nanoseconds/1000
 
 #2
 
@@ -29,7 +29,7 @@ def two():
         results.append(duration)
     nanoseconds = statistics.mean(results)
     print(nanoseconds/1000)
-    return nanoseconds
+    return nanoseconds/1000
 
 
 #3
@@ -45,7 +45,7 @@ def three():
         results.append(duration)
     nanoseconds = statistics.mean(results)
     print(nanoseconds/1000)
-    return nanoseconds
+    return nanoseconds/1000
 
 
 #4
@@ -61,7 +61,7 @@ def four():
         results.append(duration)
     nanoseconds = statistics.mean(results)
     print(nanoseconds/1000)
-    return nanoseconds
+    return nanoseconds/1000
 
 
 
@@ -78,7 +78,7 @@ def five():
         results.append(duration)
     nanoseconds = statistics.mean(results)
     print(nanoseconds/1000)
-    return nanoseconds
+    return nanoseconds/1000
 
 
 
@@ -96,7 +96,7 @@ def six():
         results.append(duration)
     nanoseconds = statistics.mean(results)
     print(nanoseconds/1000)
-    return nanoseconds
+    return nanoseconds/1000
 
 
 
@@ -114,7 +114,7 @@ def seven():
         results.append(duration)
     nanoseconds = statistics.mean(results)
     print(nanoseconds/1000)
-    return nanoseconds
+    return nanoseconds/1000
 
 
 
@@ -131,7 +131,7 @@ def eight():
         results.append(duration)
     nanoseconds = statistics.mean(results)
     print(nanoseconds/1000)
-    return nanoseconds
+    return nanoseconds/1000
 
 #9
 def nine():
@@ -147,7 +147,7 @@ def nine():
         results.append(duration)
     nanoseconds = statistics.mean(results)
     print(nanoseconds/1000)
-    return nanoseconds
+    return nanoseconds/1000
 
 
 
@@ -166,7 +166,7 @@ def ten():
         results.append(duration)
     nanoseconds = statistics.mean(results)
     print(nanoseconds/1000)
-    return nanoseconds
+    return nanoseconds/1000
 
 
 
@@ -184,7 +184,7 @@ def eleven():
         results.append(duration)
     nanoseconds = statistics.mean(results)
     print(nanoseconds/1000)
-    return nanoseconds
+    return nanoseconds/1000
 
 
 
@@ -203,7 +203,7 @@ def tweleve():
         results.append(duration)
     nanoseconds = statistics.mean(results)
     print(nanoseconds/1000)
-    return nanoseconds
+    return nanoseconds/1000
 
 
 
@@ -229,7 +229,7 @@ def thirteen():
         result.append(duration)
     nanoseconds = statistics.mean(results)
     print(nanoseconds/1000)
-    return nanoseconds
+    return nanoseconds/1000
 
 
 
@@ -254,7 +254,7 @@ def fourteen():
         result.append(duration)
     nanoseconds = statistics.mean(results)
     print(nanoseconds/1000)
-    return nanoseconds
+    return nanoseconds/1000
 
 
 
@@ -278,7 +278,7 @@ def fifteen():
         result.append(duration)
     nanoseconds = statistics.mean(results)
     print(nanoseconds/1000)
-    return nanoseconds
+    return nanoseconds/1000
 
 
 
@@ -301,7 +301,7 @@ def sixteen():
         result.append(duration)
     nanoseconds = statistics.mean(results)
     print(nanoseconds/1000)
-    return nanoseconds
+    return nanoseconds/1000
 
 
 
@@ -324,11 +324,11 @@ filepath = './Week 2/time.txt'
 if os.path.exists(filepath):
     with open(filepath, 'a') as fp:
         for i in final_list:
-            fp.write(f"{i},\n")
+            fp.write(f"{i}\n")
         
 else:
     with open(filepath,'w') as fp:
         for i in final_list:
-            fp.write(f"{i}, \n")
+            fp.write(f"{i} \n")
         
         
